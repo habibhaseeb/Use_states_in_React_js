@@ -20,12 +20,12 @@ class MyComponent extends Component {
       <div>
         <h1>Count: {this.state.count}</h1>
         <button onClick={this.incrementCount}>Increment</button>
-      <button onClick={setColor()}> click me </button>
+      <button onClick={setColor()} onmouseOver = {colorUpdate}> click me </button>
       </div>
     );
   }
 }
 
 const [color, setColor] = usestate("olive");
-const {}
+const {update, colorUpdate} = [null, "yellow"];
 export default MyComponent;
