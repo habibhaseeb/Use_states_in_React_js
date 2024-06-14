@@ -20,9 +20,12 @@ class MyComponent extends Component {
       <div>
         <h1>Count: {this.state.count}</h1>
         <button onClick={this.incrementCount}>Increment</button>
+      <button onClick={setColor()}> click me </button>
       </div>
     );
   }
 }
 
+const [color, setColor] = usestate("olive");
+const {}
 export default MyComponent;
